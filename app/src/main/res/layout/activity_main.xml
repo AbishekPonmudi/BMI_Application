@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/white"
+    android:padding="8dp">
+
+    <ImageView
+        android:icon="@drawable/white"
+        android:layout_width="244dp"
+        android:layout_height="165dp"
+        android:layout_margin="50dp"
+        android:src="@drawable/bmi_new" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI CALCULATOR"
+        android:textColor="@color/black"
+        android:textSize="5mm"
+        />
+
+    <RadioGroup
+        android:layout_width="400dp"
+        android:layout_height="66dp"
+        android:layout_margin="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_button_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="3.5mm"
+            android:text="MALE" />
+
+        <RadioButton
+            android:id="@+id/radio_button_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="3.5mm"
+
+            android:text="FEMALE" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edit_text_Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="4mm"
+        android:textColor="@color/black"
+        android:layout_marginBottom="@dimen/cardview_default_radius"
+        android:hint="Age"
+        android:inputType="number"
+        android:padding="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textColor="@color/black"
+        android:orientation="horizontal">
+
+
+
+        <EditText
+            android:id="@+id/edit_text_inches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Height (cm)"
+            android:textColor="@color/black"
+            android:textSize="4mm"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_text_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Weight(kg)"
+        android:textColor="@color/black"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button_Calculate"
+        android:layout_width="wrap_content"
+        android:textSize="6mm"
+        android:layout_height="wrap_content"
+        android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/text_view_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="23.6 is the normal average weight
+" />
+
+
+</LinearLayout>
+
+
+
+
